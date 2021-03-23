@@ -17,6 +17,14 @@
     }
 }
 
+.title-posts{
+    font-size: 22px;
+    @media (max-width: $md3+px) {
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
 .text {
     font-size: 16px;
     line-height: 23 / 16 * 100%;

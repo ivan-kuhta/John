@@ -737,6 +737,10 @@ textarea.input {
   line-height: 136.36364%;
 }
 
+.title-posts {
+  font-size: 22px;
+}
+
 .text {
   font-size: 16px;
   line-height: 143.75%;
@@ -807,6 +811,81 @@ textarea.input {
 
 .recent-posts {
   background: #edf7fa;
+  padding: 25px 0px 13px 0px;
+}
+
+.recent-posts__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.recent-posts__title {
+  padding: 0px 20px 0px 0px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.recent-posts__view-all {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  font-size: 16px;
+  line-height: 23px;
+  color: #00a8cc;
+}
+
+.recent-posts__items {
+  margin: 0px -10px;
+}
+
+.recent-posts__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 0px 10px;
+  margin-bottom: 17px;
+}
+
+.recent-post {
+  height: 100%;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+          box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.recent-post *:last-child {
+  margin-bottom: 0px;
+}
+
+.recent-post__title {
+  display: inline-block;
+  color: inherit;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 146.15385%;
+  -webkit-transition: color .3s ease 0s;
+  -o-transition: color .3s ease 0s;
+  transition: color .3s ease 0s;
+  margin-bottom: 17px;
+}
+
+.recent-post__info {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 144.44444%;
+}
+
+.recent-post__info span {
+  margin: 0px 10px;
+}
+
+.recent-post__text {
+  margin-bottom: 15px;
 }
 
 @media (min-width: 767.98px) {
@@ -819,10 +898,20 @@ textarea.input {
   .menu__list li {
     margin: 0px 33px 0px 0px;
   }
+
+  .recent-posts__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media (min-width: 991.98px) {
   .menu__link:hover {
+    color: #ff6464;
+  }
+
+  .recent-post__title:hover {
     color: #ff6464;
   }
 }
@@ -1058,6 +1147,11 @@ textarea.input {
     font-size: 32px;
   }
 
+  .title-posts {
+    text-align: center;
+    font-size: 18px;
+  }
+
   .page {
     padding-top: 30px;
   }
@@ -1098,6 +1192,24 @@ textarea.input {
     width: 170px;
     height: 170px;
     margin-bottom: 40px;
+  }
+
+  .recent-posts {
+    padding-bottom: 23px;
+  }
+
+  .recent-posts__view-all {
+    display: none;
+  }
+
+  .recent-post__title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .recent-post__info {
+    font-size: 16px;
+    margin-bottom: 10px;
   }
 }
 
