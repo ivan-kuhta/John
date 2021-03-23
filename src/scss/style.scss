@@ -70,7 +70,8 @@ body {
     min-width: $minwidth;
     position: relative;
     width: 100%;
-    color: #000;
+    color: $fontColor;
+    font-weight: 400;
 }
 
 body {
@@ -158,7 +159,6 @@ h6 {
 .container {
     max-width: $maxWidthContainer + px;
     margin: 0 auto;
-    width: 100%;
     // @media (max-width: $md1+px) {
     //     max-width: 970px;
     // }
@@ -622,3 +622,15 @@ h6 {
 @import "icons";
 @import "ui";
 // </Load file UI css, form and final class>
+
+// Main Block
+.page{
+    padding: 90px 0px 0px 0px;
+    flex: 1 1 auto;
+    @media (max-width: $md3+px) {
+        padding-top: 30px;
+    }
+}
+//  End Main Block
+
+@import 'pages/pages';

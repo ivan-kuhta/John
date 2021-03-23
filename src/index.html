@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('html/_head.html', {
-    "title": "HomePage",
+"title": "HomePage",
 })
+
 <body>
     <div class="wrapper">
         @@include('html/_header.html')
-
+        <main class="page">
+            @@include('html/blocks/_hello.html')
+        </main>
         @@include('html/_footer.html')
     </div>
     @@include('html/_scripts.html')

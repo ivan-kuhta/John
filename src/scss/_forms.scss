@@ -8,22 +8,24 @@
 
 // <button (a.btn+tab)>======================================================================
 .btn{
-    height: 50px;
-    line-height: 50px;
-    display: inline-block;
-    padding: 0px 33px;
-    font-size: 15px;
-    font-family: 'Bebas';
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    background-color: #000;
-    color: #fff;
-    &--w{
-        background-color: #fff;
-        color: #000;
+    display: inline-flex;
+    padding: 0px 20px;
+    background-color: $hoverColor;
+    border-radius: 2px;
+    align-items: center;
+    justify-content: center;
+    height: 47px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29 / 20 * 100%;
+    color: $white;
+    transition: all 0.3s ease 0s;
+    @media (min-width: 992px) {
+        &:hover{
+            background-color: darken($hoverColor, 10%)
+        }
     }
-    &:hover{}
-    &.hw{width: 100%;}
 }
 // </button>======================================================================
 .select-block{position: relative;}
