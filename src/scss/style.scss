@@ -631,6 +631,23 @@ h6 {
         padding-top: 30px;
     }
 }
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // .social__item
+    &__item {
+        margin: 0 17px;
+        font-size: 30px;
+        color: inherit;
+        transition: color .3s ease 0s;
+        @media (min-width: $md2+px) {
+            &:hover{
+                color: $hoverColor;
+            }
+        }
+    }
+  }
 //  End Main Block
 
 @import 'pages/pages';

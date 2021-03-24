@@ -160,6 +160,15 @@ h6 {
   display: none;
 }
 
+.footer {
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.footer__social {
+  margin-bottom: 26px;
+}
+
 .private {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -753,6 +762,27 @@ textarea.input {
           flex: 1 1 auto;
 }
 
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__item {
+  margin: 0 17px;
+  font-size: 30px;
+  color: inherit;
+  -webkit-transition: color .3s ease 0s;
+  -o-transition: color .3s ease 0s;
+  transition: color .3s ease 0s;
+}
+
 .hello {
   padding-top: 38px;
   padding-bottom: 70px;
@@ -1001,6 +1031,10 @@ textarea.input {
 
 @media (min-width: 991.98px) {
   .menu__link:hover {
+    color: #ff6464;
+  }
+
+  .social__item:hover {
     color: #ff6464;
   }
 
