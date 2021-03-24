@@ -888,6 +888,86 @@ textarea.input {
   margin-bottom: 15px;
 }
 
+.featured-works {
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+.featured-works__title {
+  margin-bottom: 20px;
+}
+
+.featured-works__items::-webkit-scrollbar {
+  display: none;
+}
+
+.works__item {
+  border-bottom: 1px solid #E0E0E0;
+  padding-bottom: 30px;
+  margin-top: 30px;
+}
+
+.works__image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 246px;
+          flex: 0 0 246px;
+  display: block;
+  min-height: 180px;
+  border-radius: 6px;
+  min-height: 180px;
+  overflow: hidden;
+}
+
+.works__body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.works__title {
+  display: block;
+  color: inherit;
+  font-size: 30px;
+  line-height: 146.66667%;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.works__info {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.works__year {
+  height: 25px;
+  padding: 0px 10px;
+  border-radius: 16px;
+  background-color: #142850;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-weight: 900;
+  font-size: 18px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.works__category {
+  color: #8695a4;
+  font-size: 20px;
+  margin-left: 25px;
+}
+
 @media (min-width: 767.98px) {
   .menu__list {
     display: -webkit-box;
@@ -903,6 +983,19 @@ textarea.input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .works__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .works__body {
+    padding-left: 18px;
   }
 }
 
@@ -1210,6 +1303,35 @@ textarea.input {
   .recent-post__info {
     font-size: 16px;
     margin-bottom: 10px;
+  }
+
+  .featured-works {
+    padding-bottom: 30px 0px;
+  }
+
+  .featured-works__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: auto;
+    margin: 0 -10px;
+    padding: 0 10px;
+  }
+
+  .featured-works__items .works__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 90%;
+            flex: 0 0 90%;
+    margin: 0px 15px 0px 0px;
+  }
+
+  .works__image {
+    margin-bottom: 17px;
+    padding-bottom: 60%;
+  }
+
+  .works__title {
+    font-size: 24px;
   }
 }
 
