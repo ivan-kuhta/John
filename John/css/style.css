@@ -107,6 +107,13 @@ h6 {
   width: 100%;
   min-height: 100%;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container {
@@ -154,6 +161,10 @@ h6 {
   -webkit-transition: color .3s ease 0s;
   -o-transition: color .3s ease 0s;
   transition: color .3s ease 0s;
+}
+
+.menu__link.active {
+  color: #ff6464;
 }
 
 .icon-menu {
@@ -931,6 +942,52 @@ textarea.input {
   display: none;
 }
 
+.blog {
+  padding-bottom: 50px;
+}
+
+.blog__title {
+  margin-bottom: 50px;
+}
+
+.blog__article-name {
+  font-size: 30px;
+  font-weight: 500;
+  display: inline-block;
+  line-height: 146.66667%;
+  color: inherit;
+  -webkit-transition: color .3s ease 0s;
+  -o-transition: color .3s ease 0s;
+  transition: color .3s ease 0s;
+  margin-bottom: 10px;
+}
+
+.blog__item {
+  border-bottom: 1px solid #E0E0E0;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.blog__item:last-child {
+  margin: 0px;
+}
+
+.blog__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.blog__separator {
+  margin: 0px 20px;
+}
+
+.blog__category {
+  color: #8695a4;
+}
+
 .works__item {
   border-bottom: 1px solid #E0E0E0;
   padding-bottom: 30px;
@@ -1039,6 +1096,10 @@ textarea.input {
   }
 
   .recent-post__title:hover {
+    color: #ff6464;
+  }
+
+  .blog__article-name:hover {
     color: #ff6464;
   }
 }
@@ -1270,6 +1331,10 @@ textarea.input {
     bottom: calc(50% - 1px);
   }
 
+  .footer {
+    padding: 30px 0px;
+  }
+
   .title {
     font-size: 32px;
   }
@@ -1357,6 +1422,27 @@ textarea.input {
         -ms-flex: 0 0 90%;
             flex: 0 0 90%;
     margin: 0px 15px 0px 0px;
+  }
+
+  .blog {
+    margin-bottom: 30px;
+  }
+
+  .blog__title {
+    margin-bottom: 20px;
+  }
+
+  .blog__article-name {
+    font-size: 26px;
+  }
+
+  .blog__item {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+  }
+
+  .blog__info {
+    font-size: 16px;
   }
 
   .works__image {

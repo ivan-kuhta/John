@@ -8,9 +8,10 @@
         </div>
         <nav class="menu__body">
           <ul class="menu__list">
-            <li><a href="#" class="menu__link">Works</a></li>
-            <li><a href="#" class="menu__link">Blog</a></li>
-            <li><a href="#" class="menu__link">Contact</a></li>
+            <li><a href="/" class="menu__link @@if(link == 1) {active}">Home</a></li>
+            <li><a href="works.html" class="menu__link @@if(link == 2) {active}">Works</a></li>
+            <li><a href="blog.html" class="menu__link @@if(link == 3) {active}">Blog</a></li>
+            <li><a href="contact.html" class="menu__link @@if(link == 4) {active}">Contact</a></li>
           </ul>
         </nav>
       </div>

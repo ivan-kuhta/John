@@ -2,7 +2,7 @@
   // .works__item
 
   &__item {
-    border-bottom: 1px solid $lineColor;
+    border-bottom: $line;
     padding-bottom: 30px;
     margin-top: 30px;
     @media (min-width: $md3+px){
