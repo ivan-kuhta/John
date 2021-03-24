@@ -1,6 +1,5 @@
 .works {
   // .works__item
-
   &__item {
     border-bottom: $line;
     padding-bottom: 30px;
@@ -42,6 +41,12 @@
     line-height: 44 / 30 * 100%;
     font-weight: 700;
     margin-bottom: 15px;
+    transition: color .3s ease 0s;
+    @media (min-width: $md3+px){
+      &:hover{
+        color: $hoverColor;
+      }
+    }
     @media (max-width: $md3+px){
       font-size: 24px;
     }

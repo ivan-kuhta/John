@@ -761,7 +761,8 @@ textarea.input {
   font-size: 22px;
 }
 
-.text {
+.text,
+.article__text p {
   font-size: 16px;
   line-height: 143.75%;
 }
@@ -988,6 +989,72 @@ textarea.input {
   color: #8695a4;
 }
 
+.works {
+  padding-bottom: 60px;
+}
+
+.works__main-title {
+  margin-bottom: 45px;
+}
+
+.article {
+  max-width: 700px;
+  padding: 0 10px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.article__title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 147.05882%;
+  margin-bottom: 30px;
+}
+
+.article__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.article__year {
+  background-color: #ff6464;
+  color: #fff;
+  height: 25px;
+  padding: 0 10px;
+  font-size: 18px;
+  font-weight: 900;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.article__category {
+  font-size: 20px;
+  margin-left: 25px;
+  margin-bottom: 23px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  line-height: 125%;
+}
+
+.article__text p {
+  margin-bottom: 20px;
+}
+
+.article__text img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
 .works__item {
   border-bottom: 1px solid #E0E0E0;
   padding-bottom: 30px;
@@ -1018,6 +1085,9 @@ textarea.input {
   line-height: 146.66667%;
   font-weight: 700;
   margin-bottom: 15px;
+  -webkit-transition: color .3s ease 0s;
+  -o-transition: color .3s ease 0s;
+  transition: color .3s ease 0s;
 }
 
 .works__info {
@@ -1083,6 +1153,10 @@ textarea.input {
 
   .works__body {
     padding-left: 18px;
+  }
+
+  .works__title:hover {
+    color: #ff6464;
   }
 }
 
@@ -1443,6 +1517,22 @@ textarea.input {
 
   .blog__info {
     font-size: 16px;
+  }
+
+  .works {
+    padding-bottom: 30px;
+  }
+
+  .works__main-title {
+    margin-bottom: 20px;
+  }
+
+  .article__title {
+    font-size: 30px;
+  }
+
+  .article__category {
+    font-size: 18px;
   }
 
   .works__image {
