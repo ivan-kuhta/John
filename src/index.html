@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('html/_head.html', {
-    "title": "Головна",
+"title": "HomePage",
 })
+
 <body>
     <div class="wrapper">
-        @@include('html/_header.html')
-        <p>Test</p>
+        @@include('html/_header.html', {
+            "link": "1"
+        })
+        <main class="page">
+            @@include('html/blocks/_hello.html')
+            @@include('html/blocks/_recent-post.html')
+            @@include('html/blocks/_featured-works.html')
+        </main>
         @@include('html/_footer.html')
     </div>
     @@include('html/_scripts.html')

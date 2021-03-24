@@ -1,0 +1,32 @@
+.featured-works {
+  padding-top: 30px;
+  padding-bottom: 80px;
+  @media (max-width: $md3+px){
+    padding-bottom: 30px 0px;
+  }
+  // .featured-works__container
+  &__container {
+  }
+  // .featured-works__title
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__items {
+    @media (max-width: $md3+px){
+      display: flex;
+      overflow: auto;
+      margin: 0 -10px;
+      padding: 0 10px;
+    }
+    .works__item{
+      @media (max-width: $md3+px){
+        flex: 0 0 90%;
+        margin: 0px 15px 0px 0px;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
