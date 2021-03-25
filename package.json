@@ -8,10 +8,10 @@
   },
   "author": "ARGUS",
   "license": "ISC",
-   "engines": {
+  "engines": {
     "node": "11.15.0",
     "npm": "6.7.0"
- },
+  },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
     "bootstrap": "^4.5.0",
